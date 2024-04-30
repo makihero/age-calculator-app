@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="output.css">
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-light-grey font-poppins text-[32px] ">
+  <main class="w-[340px] bg-white m-[40px_auto] rounded-[20px_20px_150px_20px] py-[50px] px-6 md:w-[840px] md:m-[170px_auto] md:p-[60px]">
+    <form action="#" id="ageCalculatorForm" class="flex justify-between pb-[64px] border-b border-light-grey relative md:justify-start md:gap-8">
+
+      <div class="flex flex-col gap-2">
+        <label for="day" class="text-[15px] uppercase text-smokey-grey tracking-[2px]">day</label>
+        <input id="dayInput" class="text-xl border w-[87px] p-2 rounded-lg outline-none focus:border-purple md:w-[159px] md:p-6 md:text-2xl" type="text" placeholder="DD"></input>
+        <span id="dayError" class="text-light-red italic text-[8px] hidden">This filed is required</span>
+      </div>
+      
+      <div class="flex flex-col gap-2">
+        <label for="month" class="text-[15px] uppercase text-smokey-grey tracking-[2px]">Month</label>
+        <input id="monthInput" class="text-xl border w-[87px] p-2 rounded-lg outline-none focus:border-purple md:w-[159px] md:p-6 md:text-2xl" type="text" placeholder="MM"></input>
+        <span id="monthError" class="text-light-red italic text-[8px] hidden">This filed is required</span>
+      </div>
+      
+      <div class="flex flex-col gap-2">
+        <label for="year" class="text-[15px] uppercase text-smokey-grey tracking-[2px]">Year</label>
+        <input id="yearInput" class="text-xl border w-[87px] p-2 rounded-lg outline-none focus:border-purple md:w-[159px] md:p-6 md:text-2xl" type="text" placeholder="YYYY"></label>
+        <span id="yearError" class="text-light-red italic text-[8px] hidden">This filed is required</span>
+      </div>
+      
+      <div id="calculateButton" class="bg-purple w-[65px] h-[65px] rounded-full grid place-items-center absolute bottom-[-32px] mx-auto left-0 right-0 cursor-pointer hover:bg-off-black transition duration-500 md:w-[95px] md:h-[95px] md:bottom-[-47px] md:mx-0 md:left-auto">
+        <img src="../assets/images/icon-arrow.svg" class="w-6 md:w-8" alt="">
+      </div>
+    </form>
+
+
+    <section class="pt-[70px]">
+      <p class="dayOutput text-5xl text-purple font-[800] italic md:text-8xl">-- <span class="text-off-black">years</span></p>
+      <p class="monthOutput text-5xl text-purple font-[800] italic md:text-8xl">-- <span class="text-off-black">months</span></p>
+      <p class="yearOutput text-5xl text-purple font-[800] italic md:text-8xl ">-- <span class="text-off-black">days</span></p>
+    </section>
+  </main>
+
+  <script src="../main.js"></script>
+</body>
+</html>
